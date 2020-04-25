@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint", // babel-eslint , type-script
-  "plugins": ["prettier", "import", "node", "promise", "standard"],
+  "plugins": ["prettier", "import", "node", "promise", "standard", "jest"],
   "extends": ["eslint:recommended"], // eslint 추천 rule
   "parserOptions": {
     "ecmaVersion": 2019,
@@ -8,7 +8,8 @@
   },
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "globals": {
     "document": "readonly",
