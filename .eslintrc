@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint", // babel-eslint , type-script
+  "plugins": ["prettier", "import", "node", "promise", "standard"],
+  "extends": ["eslint:recommended"], // eslint 추천 rule
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "document": "readonly",
+    "navigator": "readonly",
+    "window": "readonly"
+  },
+  "overrides": [],
+  "rules": {
+    "no-console": "error"
+  }
+}
