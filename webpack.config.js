@@ -6,7 +6,8 @@ require('webpack')
 module.exports = {
   entry: {
     // # 최초 진입점
-    app: './src/index.js',
+    // app: './src/index.js',
+    prototype: './src/3_week/function/prototype.js',
   },
   /** 
    * 서로 의존성이 없는 복수의 파일은 array 형식으로 사용 가능
@@ -61,7 +62,8 @@ module.exports = {
   plugins: [
     // # 번들링 옵션
     new HtmlWebpackPlugin({
-      template: './public/index.html', // entry 역할
+      // template: './public/index.html', // entry 역할
+      template: './src/3_week/function/index.html',
       filename: './index.html', // output 역할
       showErrors: true, // 에러 발생시 메세지가 브라우저 화면에 노출 여부
       /**
